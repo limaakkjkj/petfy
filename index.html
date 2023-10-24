@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-search">
+                <h1>Pet Shop</h1>
+                <div class="pesquisa">
+                    <img src="/petfy/imagens/lupa.png" alt="Pesquisar">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="cart-icon">
+                <img src="/petfy/imagens/carrinho.png" alt="Carrinho de Compras">
+            </div>
+            <div class="perfil">
+                <img src="/petfy/imagens/perfil.png" alt="Perfil">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="products">
+            <div class="section-header">
+                <h2>Our Products</h2>
+            </div>
+            <div class="product">
+                <img src="/petfy/imagens/racao.png" alt="Dog Food">
+                <p>Dog Food</p>
+                <button class="buy-button" onclick="buyProduct('Dog Food')">Buy</button>
+            </div>
+            <div class="product">
+                <img src="/petfy/imagens/racaogato.avif" alt="Cat Food">
+                <p>Cat Food</p>
+                <button class="buy-button" onclick="buyProduct('Cat Food')">Buy</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

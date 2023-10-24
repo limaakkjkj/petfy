@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+h1, h2, p {
+    color: #333; /* Cor do texto */
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%; /* Define a largura máxima como 100% do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 8px;
+    width: 300px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa {
+    margin-left: 50px; /* Adicione margem entre os ícones */
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa img {
+    margin-right: 10px;
+}
+
+.pesquisa input {
+    border: none;
+    border-bottom: 2px solid #4CAF50; /* Cor da linha inferior */
+    outline: none;
+    font-size: 16px;
+}
+
+.cart-icon {
+    margin-left: 80%;
+}
+
+.perfil {
+    margin-left: 50px;
+}
+
+.cart-icon img, .pesquisa img, .perfil img {
+    max-width: 35px; /* Define o tamanho máximo da imagem do carrinho */
+}
+
+
+
+
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Ajuste o preenchimento conforme necessário */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif; /* Fonte do botão */
+}
+
+
+.buy-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Efeito de escala no hover */
+}
+
+.cart {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex: 0 0 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        flex: 0 0 100%;
+    }
+}
+ 
